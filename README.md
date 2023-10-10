@@ -136,6 +136,22 @@
  ```
 10. Restart semua node
 11. Cek semua node ubuntu apakah sudah memiliki ip yang sesuai dengan settingan dengan command `ip a`. Berikut adalah contoh untuk node Pandudewanata dengan Prefix IP 10.26, yang sudah disesuaikan dengan Prefix IP kelompok masing-masing.
-12. 
+ ![ip-a](https://github.com/laurivasyyy/Jarkom-Modul-2-D09-2023/blob/e077a293c2a17e1fefa9aebf2008480735239b74/assets/Screenshot%202023-10-10%20at%2022.20.43.png)
+12. Ketikkan
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.26.0.0/16
+```
+pada router `Pandudewanata` 
+Keterangan:
+* `iptables` : iptables merupakan suatu tools dalam sistem operasi Linux yang berfungsi sebagai filter terhadap lalu lintas data. Dengan iptables inilah kita akan mengatur semua lalu lintas dalam komputer, baik yang masuk, keluar, maupun yang sekadar melewati komputer kita. Untuk penjelasan lebih lanjut nanti akan dibahas pada Modul 5.
+* `NAT` (Network Address Translation): Suatu metode penafsiran alamat jaringan yang digunakan untuk menghubungkan lebih dari satu komputer ke jaringan internet dengan menggunakan satu alamat IP.
+* `Masquerade`: Digunakan untuk menyamarkan paket, misal mengganti alamat pengirim dengan alamat router.
+* `-s` (Source Address): Spesifikasi pada source. Address bisa berupa nama jaringan, nama host, atau alamat IP.
+13. Ketikkan command `cat /etc/resolv.conf` di Pandudewanata
+  ```
+  nameserver 192.168.122.1
+  ```
+14. Lalu, ketikkan command ini di node ubuntu yang lain `echo nameserver 192.168.122.1 > /etc/resolv.conf`
+15. Semua node sekarang seharusnya sudah bisa melakukan `ping google.com`, yang artinya adalah sudah tersambung ke internet
 
 
