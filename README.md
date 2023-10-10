@@ -49,17 +49,17 @@
 
  auto eth1
  iface eth1 inet static
- address 10.61.1.1
+ address 10.26.1.1
  netmask 255.255.255.0
 
  auto eth2
  iface eth2 inet static
- address 10.61.2.1
+ address 10.26.2.1
  netmask 255.255.255.0
 
  auto eth3
  iface eth3 inet static
- address 10.61.3.1
+ address 10.26.3.1
  netmask 255.255.255.0 
  ```
 
@@ -67,72 +67,75 @@
  ```
  auto eth0
  iface eth0 inet static
- address 10.61.1.2
+ address 10.26.1.2
  netmask 255.255.255.0
- gateway 10.61.1.1
+ gateway 10.26.1.1
  ```
 
  * **Sadewa** 
  ```
  auto eth0
  iface eth0 inet static
- address 10.61.1.3
+ address 10.26.1.3
  netmask 255.255.255.0
- gateway 10.61.1.1
+ gateway 10.26.1.1
 ```
 
 * **Yudhistira**
 ```
  auto eth0
  iface eth0 inet static
- address 10.61.2.2
+ address 10.26.2.2
  netmask 255.255.255.0
- gateway 10.61.2.1
+ gateway 10.26.2.1
  ```
 
  * **Werkudara**
  ```
  auto eth0
  iface eth0 inet static
- address 10.61.2.3
+ address 10.26.2.3
  netmask 255.255.255.0
- gateway 10.61.2.1
+ gateway 10.26.2.1
  ```
 
  * **Prabukusuma**
  ```
  auto eth0
  iface eth0 inet static
- address 10.61.3.2
+ address 10.26.3.2
  netmask 255.255.255.0
- gateway 10.61.3.1
+ gateway 10.26.3.1
  ```
 
  * **Abimanyu**
  ```
  auto eth0
  iface eth0 inet static
- address 10.61.3.3
+ address 10.26.3.3
  netmask 255.255.255.0
- gateway 10.61.3.1
+ gateway 10.26.3.1
  ```
 
  * **Wisanggeni**
  ```
  auto eth0
  iface eth0 inet static
- address 10.61.3.4
+ address 10.26.3.4
  netmask 255.255.255.0
- gateway 10.61.3.1
+ gateway 10.26.3.1
  ```
 
  * **Arjuna**
  ```
  auto eth0
  iface eth0 inet static
- address 10.61.3.5
+ address 10.26.3.5
  netmask 255.255.255.0
- gateway 10.61.3.1
+ gateway 10.26.3.1
  ```
+10. Restart semua node
+11. Cek semua node ubuntu apakah sudah memiliki ip yang sesuai dengan settingan dengan command `ip a`. Berikut adalah contoh untuk node Pandudewanata dengan Prefix IP 10.26, yang sudah disesuaikan dengan Prefix IP kelompok masing-masing.
+12. 
 
 
