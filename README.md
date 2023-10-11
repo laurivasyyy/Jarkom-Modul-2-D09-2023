@@ -142,6 +142,7 @@
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.26.0.0/16
 ```
 pada router `Pandudewanata` 
+
 Keterangan:
 * `iptables` : iptables merupakan suatu tools dalam sistem operasi Linux yang berfungsi sebagai filter terhadap lalu lintas data. Dengan iptables inilah kita akan mengatur semua lalu lintas dalam komputer, baik yang masuk, keluar, maupun yang sekadar melewati komputer kita. Untuk penjelasan lebih lanjut nanti akan dibahas pada Modul 5.
 * `NAT` (Network Address Translation): Suatu metode penafsiran alamat jaringan yang digunakan untuk menghubungkan lebih dari satu komputer ke jaringan internet dengan menggunakan satu alamat IP.
@@ -153,5 +154,10 @@ Keterangan:
   ```
 14. Lalu, ketikkan command ini di node ubuntu yang lain `echo nameserver 192.168.122.1 > /etc/resolv.conf`
 15. Semua node sekarang seharusnya sudah bisa melakukan `ping google.com`, yang artinya adalah sudah tersambung ke internet
+
+### Soal-2
+> Buatlah website utama pada node arjuna dengan akses ke arjuna.yyy.com dengan alias www.arjuna.yyy.com dengan yyy merupakan kode kelompok.
+
+** Solusi :**
 
 
