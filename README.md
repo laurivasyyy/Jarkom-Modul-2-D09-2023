@@ -745,7 +745,7 @@ a2ensite abimanyu.d09.com.conf
 service apache2 restart
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
 lynx abimanyu.d09.com
 ```
@@ -787,7 +787,7 @@ echo -e '<VirtualHost *:80>
 service apache2 restart
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
 lynx abimanyu.d09.com/home
 curl abimanyu.d09.com/home
@@ -818,7 +818,7 @@ a2ensite parikesit.abimanyu.d09.com.conf
 service apache2 restart
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
 lynx parikesit.abimanyu.d09.com
 curl parikesit.abimanyu.d09.com
@@ -857,7 +857,7 @@ echo -e '<VirtualHost *:80>
 service apache2 restart
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
 lynx parikesit.abimanyu.d09.com/public
 lynx parikesit.abimanyu.d09.com/secret
@@ -902,7 +902,7 @@ echo -e '<VirtualHost *:80>
 service apache2 restart
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
 lynx parikesit.abimanyu.d09.com/testerror
 lynx parikesit.abimanyu.d09.com/secret
@@ -945,7 +945,7 @@ echo -e '<VirtualHost *:80>
 </VirtualHost>' > /etc/apache2/sites-available/parikesit.abimanyu.d09.com.conf
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
 lynx parikesit.abimanyu.d09.com/js
 ```
@@ -1076,9 +1076,9 @@ apache2ctl configtest
 service apache2 restart
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
-lynx 192.173.3.3
+lynx 10.26.3.3
 ```
 
 ### Result
@@ -1137,7 +1137,7 @@ RewriteRule abimanyu http://parikesit.abimanyu.d09.com/public/images/abimanyu.pn
 service apache2 restart
 ```
 
-**Client (Sadewa)**
+**Client (Nakula)**
 ```
 lynx parikesit.abimanyu.d09.com/public/images/not-abimanyu.png
 lynx parikesit.abimanyu.d09.com/public/images/abimanyu-student.jpg
