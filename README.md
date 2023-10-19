@@ -260,7 +260,7 @@ ping www.abimanyu.d09.com -c 5
 
 **Yudhistira**
 
-Tambahkan ``parikesit IN    A       192.173.3.3     ; IP Abimanyu' > /etc/bind/jarkom/abimanyu.d09.com`` saja pada DNS Master.
+Tambahkan ``parikesit IN    A       10.26.3.3     ; IP Abimanyu' > /etc/bind/jarkom/abimanyu.d09.com`` saja pada DNS Master.
 
 ```
 ;
